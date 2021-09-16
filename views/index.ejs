@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Api Pokemones</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="blue darken-4 z-depth-5">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a href="index.php" class="brand-logo center titulos">POKEMONS</a>
+              <ul class="left hide-on-med-and-down">
+                
+                <!--<li><a href="#">Components</a></li>
+                              <li class="active"><a href="collapsible.html">JavaScript</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container">
+        <table class="striped">
+            <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Link</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+            <% poke.forEach(function(p){ %>
+              <tr>
+                <td><%= p.name %></td>
+                <td><a href="pokemon/<%= p.name %>" target="blank"><%= p.url %></a></td>                
+              </tr>
+            <% }); %>
+            </tbody>
+          </table>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

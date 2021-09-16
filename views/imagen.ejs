@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Imagen</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="blue darken-4 z-depth-5">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a href="index.php" class="brand-logo center titulos">Imagen</a>
+              <ul class="left hide-on-med-and-down">
+                
+                <!--<li><a href="#">Components</a></li>
+                              <li class="active"><a href="collapsible.html">JavaScript</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    <div class="container">
+        <img class="materialboxed" width="650" src="<%= imagenPokemon.dream_world.front_default %>">
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems, options);
+  });
+</script>
+</body>
+</html>
